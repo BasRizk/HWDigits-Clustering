@@ -1,0 +1,17 @@
+Determinining which of the 30 outputs is the best clustering result.
+
+=> After each of the converges is over.
+
+=> an array is calculated based on the prior knowledge of the classes of the data,
+and the k-means computed clusters.
+
+- An array is computed for each convergance observing the counts from each
+ cluster with the prior knowledge of each class from each digit of our
+ data-set (for example digit-0) considering its maximum count cluster,
+ (for example clustered in cluster-a with 25 samples, and cluster-b with 150,
+ then cluster-b is chosen as the dominating cluster for the class)
+
+- the sum of the values of each array -just computed- then reflects the amount
+ of data clustered correctly; hence, the convergance corresponding to
+ the computed-array with the maximum sum is the best performing convergance,
+ or in other words, most accurately clustering our original classes.
